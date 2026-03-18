@@ -1,7 +1,9 @@
 # arrdomingov3.github.io
-arrdomingov3 is my 3rd Github account.
-arrdomingo - second github account mainly for professional aspects, however I abandoned it for having similar issue with the first account.
-snowman07 - first github account, used for DMIT @ NAIT. Abandoned because of detected suspicious activity. Probably because of python file I added in github pages. Github pages can only have static file such as .html, .css, .js 
+- arrdomingov3 is my 3rd Github account.
+
+- arrdomingo - second github account mainly for professional aspects, however I abandoned it for having similar issue with the first account.
+
+- snowman07 - first github account, used for DMIT @ NAIT. Abandoned because of detected suspicious activity. Probably because of python file I added in github pages. Github pages can only have static file such as .html, .css, .js 
 
 
 ### Reference/Tutorial:
