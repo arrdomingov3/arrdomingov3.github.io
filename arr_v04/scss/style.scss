@@ -703,7 +703,7 @@ h2 {
   color: #2196f3;
 }
 
-#projects-container > p {
+.containercard > p {
   border: 3px solid rgba(171, 183, 183, 1);
   border-radius: 15px;
   background-color: rgba(149, 165, 166, 1);
@@ -711,20 +711,27 @@ h2 {
   box-shadow: inset 0 0 10px #000000; /*https://css-tricks.com/almanac/properties/b/box-shadow/*/
   /* text-indent: 50px; */
   font-size: 20px;
+
+  // Below code makes the <p> element sticky upon scroll
+  // Reference: https://codepen.io/ismailvtl/pen/WNWXBVx
+  position: sticky;
+  top: 20px;
+  margin-bottom: 120px;
 }
 
-#projects-container > p:hover {
+.containercard > p:hover {
   background-color: #2196f3;
   opacity: 3;
 }
 
-#projects-container > p span {
+.containercard > p span {
   /* text-transform: uppercase; */
   font-weight: bold;
   font-size: 60px;
   font-family: algerian;
   line-height: 80%;
 }
+
 
 /* ------------------------------------- */
 /* --------- START OF CARD AREA -------- */
@@ -1116,14 +1123,14 @@ footer ul li a i {
     height: 800px;
   }
 
-  #projects-container > p {
+  .containercard > p {
     border: 8px solid rgba(171, 183, 183, 1);
   }
 
   /* ------------------------------------- */
   /* --------- START OF CARD AREA -------- */
   .containercard {
-    margin: 20px 60px;
+    margin: 50px 30px 120px 30px;
   }
 
   .flip-card {
