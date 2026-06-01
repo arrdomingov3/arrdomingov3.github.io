@@ -26,6 +26,10 @@
   background-image: radial-gradient(rgb(212, 159, 214) 7%, rgb(215, 112, 224) 25%, rgb(175, 50, 233) 70%);
 }
 
+.backdoor-gold {
+  background-image: radial-gradient(ellipse farthest-corner at left top, #FFFFFF 5%, #FFFFAC 30%, #D1B464 60%, #5d4a1f 80%);
+}
+
 .backdoor > p {
   padding: 10px;
   font-size: 18px;
@@ -74,6 +78,10 @@
   // background-color: purple;
   background-image: conic-gradient(at 90% 45%, rgb(165, 69, 221), rgb(177, 123, 204), purple);
 
+}
+
+.gold-team {
+  background-image: conic-gradient(at 90% 45%, rgb(255, 255, 172), rgb(209, 180, 100), rgb(93, 74, 31));
 }
 
 .door span {
@@ -137,3 +145,50 @@
   border: solid 3px rgba(171, 183, 183, 1);
   border-radius: 5px;
 }
+
+
+// <<<<<-------------------------------------->>>>>
+// <<<<<------ START of .ribbon class -------->>>>>
+
+// This .ribbon class is used for the projects.html on the "CTF Challenges" project.
+// Google: css ribbons
+// this is the link I used: https://css-generators.com/ribbon-shapes/
+
+.ribbon {
+  --r: .4em; /* control the ribbon shape (the radius) */
+
+  position: absolute;
+  bottom: 20px;
+  inset-inline: calc(-1*var(--r));
+  text-align: center;
+  line-height: 1.8; 
+  padding: calc(2*var(--r)) .5em 0;
+  border-radius: var(--r);
+  --_g:0/var(--r) calc(2*var(--r)) no-repeat;
+  background: 
+    radial-gradient(100% 50% at right,#0005 98%,#0000 101%) 0    var(--_g),
+    radial-gradient(100% 50% at left ,#0005 98%,#0000 101%) 100% var(--_g),
+    conic-gradient(at var(--r) calc(2*var(--r)),#0000 25%,#8FBE00 0)
+     0 0/calc(100% - var(--r)) 100%;
+}
+
+.glow {
+  font-size: 35px;
+  color: #000;
+  font-weight: bold;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff, 0 0 60px #fff, 0 0 70px #fff;
+  }
+  
+  to {
+    text-shadow: 0 0 30px #000, 0 0 40px #000, 0 0 50px #000, 0 0 60px #000, 0 0 70px #000, 0 0 80px #000, 0 0 100px #000;
+  }
+}
+
+// <<<<<------- END of .ribbon class --------->>>>>
+// <<<<<-------------------------------------->>>>>
